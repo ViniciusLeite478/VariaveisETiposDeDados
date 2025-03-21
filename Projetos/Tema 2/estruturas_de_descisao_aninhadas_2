@@ -1,0 +1,24 @@
+#include <stdio.h>
+
+int main(){
+
+    int idade; 
+    float renda;
+
+    printf("Insira a sua idade:\n");
+    scanf("%d", &idade);
+
+    printf("Insira sua renda mensal: \n");
+    scanf("%f", &renda);
+
+    if (idade <= 18 || idade >= 60)
+    {
+    if (renda < 2000) {
+    printf("Você tem direito ao desconto!\n");
+    } else {
+    printf("Você não tem direito ao desconto de acordo com a sua renda!\n");
+    }
+    } else {
+    printf("Você não tem direito ao desconto de acordo com a idade!\n");
+    }
+    }
